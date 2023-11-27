@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  db:
+    image: "mongo:7"
+    volumes:
+      - type: bind
+        source: ./db/data
+        target: /data/db
